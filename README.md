@@ -1,1 +1,1 @@
-# ELTE
+példakódok, feladatsorok
