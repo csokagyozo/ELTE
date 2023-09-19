@@ -2,8 +2,8 @@
 
 public class Tippelos
 {
-    static void Main(string[] args)
-    //public Tippelos()
+    //static void Main(string[] args)
+    public Tippelos()
     {
         Random rnd = new Random();
         int szam = rnd.Next(1, 1001);

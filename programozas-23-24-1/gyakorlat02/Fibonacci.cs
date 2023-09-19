@@ -2,22 +2,22 @@
 
 public class Fibonacci
 {
-    //static void Main(string[] args)
-    public Fibonacci()
-	{
-        int n;
+    static void Main(string[] args)
+    //public Fibonacci()
+    {
+        int x;
         int f = 0;
 
-        Console.Write("n: ");
-        int.TryParse(Console.ReadLine(), out n);
+        Console.Write("x: ");
+        int.TryParse(Console.ReadLine(), out x);
 
-        if (n < 1)
+        if (x < 1)
         {
-            Console.WriteLine("n >= 1");
+            Console.WriteLine("x >= 1");
             return;
         }
 
-        if (n == 1 || n == 2)
+        if (x == 1 || x == 2)
         {
             f = 1;
         }
@@ -29,7 +29,7 @@ public class Fibonacci
             int fibIMinus1 = 1;
             int fibI = 1;
 
-            for (int i = 3; i <= n; i++)
+            for (int i = 3; i <= x; i++)
             {
                 fibIMinus2 = fibIMinus1;
                 fibIMinus1 = fibI;
@@ -39,7 +39,7 @@ public class Fibonacci
             f = fibI;
         }
 
-        Console.WriteLine("Az {0}. Fibonacci szám: {1}", n, f);
+        Console.WriteLine("Az {0}. Fibonacci szám: {1}", x, f);
 
     }
 }

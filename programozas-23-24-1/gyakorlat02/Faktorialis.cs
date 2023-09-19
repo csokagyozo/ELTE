@@ -5,23 +5,25 @@ public class Faktorialis
     //static void Main(string[] args)
     public Faktorialis()
 	{
-        int n;
+        int x;
+        int i = 1;
         int fakt = 1;
 
-        Console.Write("n: ");
-        int.TryParse(Console.ReadLine(), out n);
+        Console.Write("x: ");
+        int.TryParse(Console.ReadLine(), out x);
 
-        if (n < 0 || n > 14)
+        if (x < 0 || x > 14)
         {
             Console.WriteLine("0 <= n <= 14");
             return;
         }
 
-        for (int i = 1; i <= n; i++)
+        while (i <= x)
         {
             fakt = fakt * i;
+            i = i + 1;
         }
         
-        Console.WriteLine("{0} faktoriális = {1}", n, fakt);
+        Console.WriteLine("{0} faktoriális = {1}", x, fakt);
     }
 }
