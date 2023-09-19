@@ -3,7 +3,6 @@
 public class Fibonacci
 {
     static void Main(string[] args)
-    //public Fibonacci()
     {
         int x;
         int f = 0;
@@ -28,12 +27,14 @@ public class Fibonacci
             int fibIMinus2 = 0;
             int fibIMinus1 = 1;
             int fibI = 1;
+            int i = 3;
 
-            for (int i = 3; i <= x; i++)
+            while (i <= x)
             {
                 fibIMinus2 = fibIMinus1;
                 fibIMinus1 = fibI;
                 fibI = fibIMinus1 + fibIMinus2;
+                i = i + 1;
             }
 
             f = fibI;
