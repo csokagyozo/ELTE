@@ -2,13 +2,12 @@
 
 public class Gps
 {
-	//public Gps()
     static void Main(string[] args)
     {
         /*  Feladat: olvassuk be egy gps magasságadatait, és határozzuk meg
          *  az útvonal legmagasabb pontját.
          */
-        // Specifikáció: http://webprogramozas.inf.elte.hu/user/gyozke/specifikacio/?data=JTdCJTIyc3BlY2lmaWNhdGlvbiUyMiUzQSUyMkJlJTNBJTIwbiVFMiU4OCU4OE4lMkMlMjBtYWdhc3NhZyVFMiU4OCU4OFIlNUIxLi5uJTVEJTVDciU1Q25LaSUzQSUyMG1heCVFMiU4OCU4OFIlMkMlMjBtYXhoZWx5JUUyJTg4JTg4TiU1Q3IlNUNuRWYlM0ElMjBuJTIwJTNFJTIwMCU1Q3IlNUNuVWYlM0ElMjBNQVgoaSUzRDEuLm4lMkMlMjBtYWdhc3NhZyU1QmklNUQpJTIwJTNEJTIwbWF4JTIwJUMzJUE5cyUyMG1hZ2Fzc2FnJTVCbWF4aGVseSU1RCUyMCUzRCUyMG1heCUyMiUyQyUyMnRlc3RzJTIyJTNBJTVCJTdCJTIyZGF0YSUyMiUzQSUyMm1hZ2Fzc2FnJTNBJTIwJTVCMC4xMiUyQzEwLjMyJTJDMTUuODclMkMxNy4wMiUyQzE2LjEwMSU1RCU1Q3IlNUNubiUzQSUyMDUlNUNyJTVDbm1heCUzQSUyMDE3LjAyJTVDciU1Q25tYXhoZWx5JTNBJTIwNCUyMiUyQyUyMm5hbWUlMjIlM0ElMjIlMjIlMkMlMjJyZXN1bHQlMjIlM0EyJTdEJTVEJTdE
+        // Specifikáció: http://progalap.elte.hu/specifikacio/?data=JTdCJTIyc3BlY2lmaWNhdGlvbiUyMiUzQSUyMkJlJTNBJTIwbiVFMiU4OCU4OE4lMkMlMjBtYWdhc3NhZyVFMiU4OCU4OFIlNUIxLi5uJTVEJTVDciU1Q25LaSUzQSUyMG1heCVFMiU4OCU4OFIlMkMlMjBtYXhoZWx5JUUyJTg4JTg4TiU1Q3IlNUNuRWYlM0ElMjBuJTIwJTNFJTIwMCU1Q3IlNUNuVWYlM0ElMjBNQVgoaSUzRDEuLm4lMkMlMjBtYWdhc3NhZyU1QmklNUQpLm1heCUyMCUzRCUyMG1heCUyMCVDMyVBOXMlMjBtYWdhc3NhZyU1Qm1heGhlbHklNUQlMjAlM0QlMjBtYXglMjIlMkMlMjJ0ZXN0cyUyMiUzQSU1QiU3QiUyMmRhdGElMjIlM0ElMjJtYWdhc3NhZyUzQSUyMCU1QjAuMTIlMkMxMC4zMiUyQzE1Ljg3JTJDMTcuMDIlMkMxNi4xMDElNUQlNUNyJTVDbm4lM0ElMjA1JTVDciU1Q25tYXglM0ElMjAxNy4wMiU1Q3IlNUNubWF4aGVseSUzQSUyMDQlMjIlMkMlMjJuYW1lJTIyJTNBJTIyJTIyJTJDJTIycmVzdWx0JTIyJTNBMSU3RCU1RCU3RA%3D%3D
 
         int n;
         Console.Write("Hány mérésünk van? ");
@@ -16,7 +15,7 @@ public class Gps
 
         float[] szint = new float[n];
         int maxhely;
-        float max;
+        float max; 
 
         Console.Write("Kérem a magasságokat (m): \n", n);
         int i = 0;
