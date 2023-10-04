@@ -1,0 +1,21 @@
+Szorgalmi feladat: Adott egy pozitív egészekből álló sorozat, aminek az indexei egy egyenes mentén a kezdőponttól azonos irányba vett távolságot, értékei tengerszint feletti magasságot jelöli.
+
+Feladat: keressük meg a lejtőt a legnagyobb magasságkülönbséggel.
+
+pl: 
+int[] input = { 9, 6, 5, 5, 4, 8, 10, 12, 11, 8, 9};
+
+Lejtők, irány(\):
+	(9, 6, 5) -> magasság: 4;
+	(5, 4) -> magasság: 1;
+	(12, 11, 8) -> magasság: 4
+Lejtők, irány(/):
+	(4, 8, 10, 12) -> magasság: 8;
+	(8, 9) -> magasság 1
+
+Legnagyobb magasságkülönbség: 8
+indexek (0-val kezdünk): 4, 7
+ 
+
+
+Beadási határidő: október 16.

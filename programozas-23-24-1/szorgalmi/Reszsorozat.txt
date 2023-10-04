@@ -1,0 +1,20 @@
+Szorgalmi feladat: Adott egy pozitív egészekből álló sorozat. Határozzuk meg a leghosszabb monoton növekvő részsorozatát!
+Feltétel futási időhöz: egy 100 elemű sorozatra is fusson le 0,1 mp-en belül.
+
+// Tesztadatok
+int[] input1 = { 1, 7, 3, 8, 7, 1, 8, 4, 7, 9 }; // 1, 3, 4, 7, 9 (5 hosszú)
+int[] input2 = { 9, 1, 3, 2, 2, 4, 2, 7, 4, 5 }; // 1, 2, 2, 2, 4, 5 (6 hosszú)
+int[] input3 = { 9, 4, 7, 1, 4, 3, 5, 6, 9, 8, 9, 9 }; // 1, 3, 5, 6, 8, 9, 9 (7 hosszú)
+int[] input4 = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 }; // 10 (1 hosszú) 
+int[] input5 = { 4, 1, 2, 3, 4, 5 }; // 1, 2, 3, 4, 5 (5 hosszú)
+int[] input6 = { 9, 9, 9, 9, 9, 9 }; // 9, 9, 9, 9, 9, 9 (6 hosszú)
+
+Ötlet: Használjunk egy segédtömböt
+ A segédtömb x. eleme azt tárolja, hogy ha input[x]-et választjuk a részsorozat utolsó, befejező elemének,
+ akkor legfeljebb milyen hosszú monoton növekvő részsorozatot tudunk kiválasztani
+ 
+ Az első elemre ez 1. (ha az első (0.) a részsorozat első (egyetlen) eleme, akkor a részsorozat összhossza is 1.
+ A második elemet ki tudjunk számolni az eddigiekből következőkből: ha be tudjuk tenni az első elem után (nagyobb vagy egyenlő nála) akkor 2 lesz, amúgy 1.
+ Így tovább, lépésenként meg tudjuk határozni a segédtömb többi elemét, egészen az utolsóig. Ez pedig a megoldást adja majd.
+
+Beadási határidő: október 9.
