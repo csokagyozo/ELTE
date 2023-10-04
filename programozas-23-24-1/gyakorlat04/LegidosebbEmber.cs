@@ -1,7 +1,6 @@
 ﻿using System;
 internal class LegidosebbEmber
 {
-    //LegidosebbEmber()
     static void Main(string[] args)
     {
         int n;
