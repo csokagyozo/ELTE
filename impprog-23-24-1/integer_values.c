@@ -23,5 +23,17 @@ int main()
         printf("%d\n", integer + i);
     }
 
+    unsigned int unsigned_integer;
+
+    printf("%d\n", sizeof(unsigned_integer));
+
+    // 2**(8*4) = 256 ** 4 = 4 294 967 296
+    // unsigned, so maxint should be around 4 294 967 296
+    unsigned_integer =  4294967290;
+
+    for (int i = 0; i < 10; i++) {
+        printf("%u\n", unsigned_integer + i);
+    }
+
     return 0;
 }
