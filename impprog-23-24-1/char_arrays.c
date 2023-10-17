@@ -11,7 +11,7 @@ int main() {
 
     char cString1[] = "abrakadabra";
     char cString2[] = "hocuspocus";
-
+/*
     printf("%s\n", cString1);
 
     cString1[0] = 'h';
@@ -21,7 +21,7 @@ int main() {
     printf("%i\n", cString1[0]);
 
     scanf("%s", cString1);
-
+*/
     int i = 0;
     while (cString1[i] != 0) {
         printf("the %i. element of the array is %c\n", i, cString1[i]);

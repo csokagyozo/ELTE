@@ -37,7 +37,7 @@ int main() {
 
     // Fill with values from 0 to 18
     for (int i=0; i<10; ++i) {
-        someIntegers[i] = 2*i;
+        someIntegers[i] = (5-i)*3;
     }
 
     printArray(someIntegers);
