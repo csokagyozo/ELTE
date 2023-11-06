@@ -16,14 +16,14 @@ int main() {
     variable = 0;
 
     //printf("%i,%i,%i\n", pointer, *pointer, variable);
-    printf("%i,%i\n", pointer, variable);
+    printf("%p,%i\n", pointer, variable);
 
     // what will be printed out?
     pointer = &variable;
-    printf("%i,%i\n", pointer, variable);
+    printf("%p,%i\n", pointer, variable);
 
     *pointer = 10;
-    printf("%i,%i\n", pointer, variable);
+    printf("%p,%i\n", pointer, variable);
 
     // now what does this mean and how can we use it?
     int ***ppp = 0;
@@ -31,15 +31,15 @@ int main() {
     int *p = 0;
     int integer;
 
-    printf("%i,%i,%i,%i\n", ppp, pp, p, integer);
+    printf("%p,%p,%p,%i\n", ppp, pp, p, integer);
     p = &integer;
-    printf("%i,%i,%i,%i\n", ppp, pp, p, integer);
+    printf("%p,%p,%p,%i\n", ppp, pp, p, integer);
     pp = &p;
-    printf("%i,%i,%i,%i\n", ppp, pp, p, integer);
+    printf("%p,%p,%p,%i\n", ppp, pp, p, integer);
     ppp = &pp;
-    printf("%i,%i,%i,%i\n", ppp, pp, p, integer);
+    printf("%p,%p,%p,%i\n", ppp, pp, p, integer);
     ***ppp= 10;
-    printf("%i,%i,%i,%i\n", ppp, pp, p, integer);
+    printf("%p,%p,%p,%i\n", ppp, pp, p, integer);
 
 
     int arr[10] = {1,2,3,4,5,6,7,8,9,10};
@@ -48,12 +48,12 @@ int main() {
     int *r = twoDimArr[0];
 
     for (int i = 0; i < 12; i++) {
-        printf("%i,%i\n", q, *q);
+        printf("%p,%i\n", q, *q);
         q++;
     }
 
     for (int i = 0; i < 9; i++) {
-        printf("%i,%i\n", r, *r);
+        printf("%p,%i\n", r, *r);
         r++;
     }
 

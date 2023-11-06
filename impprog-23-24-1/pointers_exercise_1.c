@@ -14,15 +14,31 @@ int square(int x) {
 }
 
 int sum(int *array, int length) {
-    return 0;
+    int sum = 0;
+    for (int i = 0; i < length; i++) {
+        sum = sum + *(array+i);
+    }
+    return sum;
 }
 
 int sum2(int *start, int *end) {
-    return 0;
+    int sum = 0;
+    while (start <= end) {
+        sum = sum + *start;
+        start++;
+    }
+    return sum;
 }
 
 float avg(int *start, int *end) {
-    return 0.0;
+    int intSize = sizeof(int);
+    int length = (end - start) + 1;
+    float sum = 0.0;
+     while (start <= end) {
+        sum = sum + *start;
+        start++;
+    }
+    return sum / length;
 }
 
 int main() {
@@ -39,7 +55,7 @@ int main() {
     printf("The calculated sum is %i\n", sum(p, 10));
 
     int *first = a;
-    int *last = a + 36;
+    int *last = a + 9;
     printf("The calculated sum is %i\n", sum2(first, last));
     printf("The calculated average is %f\n", avg(first, last));
 
